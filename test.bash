@@ -5,9 +5,7 @@ set -euo pipefail
 BODY="<details>
 <summary>136.log</summary>
 <pre class=\"notranslate\">
-<code class=\"notranslate\">
-$(<136.log)
-</code>
+<code class=\"notranslate\">$(<136.log)</code>
 </pre>
 </details>"
 
