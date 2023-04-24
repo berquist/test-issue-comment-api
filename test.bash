@@ -3,7 +3,7 @@
 set -euo pipefail
 
 BODY="<details>
-<summary>136.log</details>
+<summary>136.log</summary>
 $(<136.log)
 </details>"
 
