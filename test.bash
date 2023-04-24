@@ -4,7 +4,9 @@ set -euo pipefail
 
 BODY="<details>
 <summary>136.log</summary>
+<samp>
 $(<136.log)
+</samp>
 </details>"
 
 gh api \
