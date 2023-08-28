@@ -1,0 +1,20 @@
+---
+name: test shell versus interpolation
+
+# yamllint disable-line rule:truthy
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-interp:
+    strategy:
+      fail-fast: false
+    runs-on: ubuntu-latest
+    name: interpolation party
+    env:
+      MYVAR: "this is my variable"
+    steps:
+      - name: print MYVAR
+        run: |
+          echo "${MYVAR}"

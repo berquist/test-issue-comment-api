@@ -1,0 +1,6 @@
+---
+repos:
+- repo: https://github.com/Mateusz-Grzelinski/actionlint-py
+  rev: v1.6.25.9
+  hooks:
+    - id: actionlint
