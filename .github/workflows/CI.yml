@@ -25,3 +25,9 @@ jobs:
       - name: print mymatrixvar
         run: |
           echo ${{ matrix.mymatrixvar }}
+      - name: print mymatrixvar single quote
+        run: |
+          echo '${{ matrix.mymatrixvar }}'
+      - name: print mymatrixvar double quote
+        run: |
+          echo "${{ matrix.mymatrixvar }}"
