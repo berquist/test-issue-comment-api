@@ -10,11 +10,18 @@ jobs:
   test-interp:
     strategy:
       fail-fast: false
+      matrix:
+        mymatrixvar:
+          - hello
+          - world
     runs-on: ubuntu-latest
-    name: interpolation party
+    name: interpolation party / ${{ matrix.mymatrixvar }}
     env:
       MYVAR: "this is my variable"
     steps:
       - name: print MYVAR
         run: |
           echo "${MYVAR}"
+      - name: print mymatrixvar
+        run: |
+          echo ${{ matrix.mymatrixvar }}
